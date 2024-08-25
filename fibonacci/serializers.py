@@ -4,4 +4,4 @@ from .models import FibonacciNumber
 class FibonacciNumberSerializer(serializers.ModelSerializer):
     class Meta:
         model = FibonacciNumber
-        fields = ['n_value', 'fibonacci_sequence']
+        fields = '__all__'
