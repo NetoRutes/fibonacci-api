@@ -10,7 +10,7 @@ n_value_parameter = openapi.Schema(
     required=['n_value'],
 )
 
-def fibonacci_decorator(cls):
+def swagger_fibonacci_decorator(cls):
     @method_decorator(
         swagger_auto_schema(
             request_body=n_value_parameter,
