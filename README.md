@@ -32,7 +32,7 @@ This API generates the first n Fibonacci numbers, caching results in a relationa
 
 2. **Create and activate a virtual env:**
     ```bash
-    python -m venv env source env/bin/activate
+    python -m venv env && source env/bin/activate
     ```
 
 3. **Install the required software packages:**
@@ -70,3 +70,8 @@ This API generates the first n Fibonacci numbers, caching results in a relationa
 - The `views.py` file implements the API endpoint for generating Fibonacci sequences.
 - The `tests.py` file contains unit tests to ensure the functionality of the API.
 - The `swagger.py` file configures Swagger for interactive API documentation.
+
+## Future Enhancements
+
+- Utilize better cache storage tool like Redis.
+- To allow background processing tasks for large n Fibonacci sequences utilize a queue system with tool like Celery. Than the frontend should poll the backend at regular intervals to check if the sequence has been generated.
